@@ -9,6 +9,7 @@ import {
   HStack,
   Text,
   Icon,
+  ChakraBaseProvider,
 } from "@chakra-ui/react";
 import checkMarkIcon from "./icons/checkMarkIcon";
 import icon1 from "./icons/icon1";
@@ -17,7 +18,7 @@ import icon3 from "./icons/icon3";
 
 export default function Home() {
   return (
-    <>
+    <ChakraBaseProvider>
       <Box
         textAlign={{ base: "left", md: "left", lg: "center" }}
         pl="15px"
@@ -106,6 +107,6 @@ export default function Home() {
           </HStack>
         </Flex>
       </Box>
-    </>
+    </ChakraBaseProvider>
   );
 }
